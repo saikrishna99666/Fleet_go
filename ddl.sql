@@ -69,20 +69,20 @@ CREATE TABLE transactions (
 
 -- COMPANY
 
-CREATE TABLE company_settings (
-    cid INT PRIMARY KEY,
-    cname VARCHAR(150),
-    cphone VARCHAR(20),
-    cemail VARCHAR(150),
-    cpassword VARCHAR(255),
-    address TEXT,
-    curl VARCHAR(255),
-    zipcode VARCHAR(10),
-    exp_date DATE,
-    status TINYINT(1) DEFAULT 1,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB;
+-- CREATE TABLE company_settings (
+--     cid INT PRIMARY KEY,
+--     cname VARCHAR(150),
+--     cphone VARCHAR(20),
+--     cemail VARCHAR(150),
+--     cpassword VARCHAR(255),
+--     address TEXT,
+--     curl VARCHAR(255),
+--     zipcode VARCHAR(10),
+--     exp_date DATE,
+--     status TINYINT(1) DEFAULT 1,
+--     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+--     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+-- ) ENGINE=InnoDB;
 
 CREATE TABLE company_users (
     uid INT AUTO_INCREMENT PRIMARY KEY,
